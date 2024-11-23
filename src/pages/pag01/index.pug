@@ -1,0 +1,300 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	body
+
+		header.wow.up
+			+image('logo.png', 'logo')
+		
+		section.sec1
+			.flex
+				+image('img01.png', 'img left')
+				.boxText.right
+					h1 Intersetorialidade entre Assistência Social e Educação
+					p A intersetorialidade entre assistência social e educação é um princípio fundamental para promover uma abordagem integral e eficaz no atendimento às demandas sociais e educacionais de indivíduos e comunidades. Essa interação é crucial para garantir que as políticas públicas funcionem de maneira sinérgica, potencializando os resultados e atendendo de forma mais adequada às necessidades da população.
+		
+		section.sec2.up
+			.flex.up
+				+aba([
+					{
+						nameAba: '01',
+						html: `
+						<p class="pTitle">Centro de Referência de Assistência Social</p>
+						<p>O Centro de Referência de Assistência Social (CRAS) é uma unidade de proteção social básica do Sistema Único de Assistência Social (SUAS). Sua missão é prevenir vulnerabilidades e riscos sociais através do desenvolvimento de potencialidades, fortalecimento de vínculos familiares e comunitários, e ampliação do acesso a direitos. O CRAS desempenha papéis fundamentais, incluindo a oferta pública do trabalho social com famílias por meio do Serviço de Proteção e Atendimento Integral à Família (PAIF) e a gestão territorial da rede socioassistencial de proteção social básica. Este trabalho exige um conhecimento profundo do território, que é construído por meio da vigilância socioassistencial, organização e articulação das unidades da rede socioassistencial, e gerenciamento da acolhida, inserção, encaminhamento e acompanhamento da população usuária.</p>
+						`,
+						img: 'img02.png'
+					},
+					{
+						nameAba: '02',
+						html: `
+						<p class="pTitle">Comunicação entre equipes</p>
+						<p>A intersetorialidade se concretiza por meio da comunicação efetiva entre as equipes envolvidas, o que requer planejamento, diálogo e a capacidade de articular ações conjuntas. Essas ações são essenciais para abordar contextos e demandas complexas, como pobreza, insegurança alimentar e trabalho infantil, que são expressões das desigualdades e vulnerabilidades sociais. A relação dialógica entre as equipes gera necessariamente a definição de objetivos comuns e específicos, além de ações coletivas que garantam a integralidade do atendimento aos segmentos sociais em situação de vulnerabilidade e risco social.</p>
+						`,
+						img: 'img03.png'
+					},
+					{
+						nameAba: '03',
+						html: `
+						<p class="pTitle">Atenção integral</p>
+						<p>Refletir sobre os caminhos para uma atenção integral no território requer a compreensão das atribuições das políticas sociais em resposta às demandas sociais multideterminadas. É essencial reconhecer as possibilidades de cada política atuar sobre demandas concretas, a fim de, de modo integrado, criar e definir novos acordos, fluxos e procedimentos conjuntos. Esse entendimento pressupõe a abertura para a partilha de saberes, o diálogo contínuo e a construção coletiva de respostas às necessidades e expectativas das comunidades locais. Para efetivar a intersetorialidade, é preciso combinar as dimensões setorial e intersetorial, considerando-a como um dever do Estado e um direito da cidadania.</p>
+						`,
+						img: 'img04.png'
+					},
+					{
+						nameAba: '04',
+						html: `
+						<p class="pTitle">Convergência</p>
+						<p>O primeiro princípio que rege essa relação parece ser o da convergência, um conjunto de impulsos para a ação em determinada situação, seja ela um objeto, um tema, uma necessidade, um território, um grupo, um objetivo ou uma perspectiva. No entanto, a intersetorialidade precisa ser corretiva de irracionalidades entre pessoal, funções ou gastos sobrepostos. Ela se apresenta como uma estratégia de gestão institucional que busca trazer mais qualidade, permitindo ultrapassar limites que ocorreriam na abordagem somente setorial (Sposati, 2006).</p>
+						`,
+						img: 'img05.png'
+					},
+				])
+		
+		section.sec3
+			h1 A intersetorialidade expressa a integração dos setores responsáveis pela provisão de serviços, programas, projetos e benefícios. Isso implica na racionalização e definição de processos institucionais que envolvem ações e estratégias como: 
+			.boxFlex.up
+				.num
+					h2 01
+				.text
+					p planejamento,
+			.boxFlex.up
+				.num
+					h2 02
+				.text
+					p reuniões de rede,
+			.boxFlex.up
+				.num
+					h2 03
+				.text
+					p diagnóstico,
+			.boxFlex.up
+				.num
+					h2 04
+				.text
+					p capacitação,
+			.boxFlex.up
+				.num
+					h2 05
+				.text
+					p ações educativas,
+			.boxFlex.up
+				.num
+					h2 06
+				.text
+					p adoção de sistemas integrados,
+			.boxFlex.up
+				.num
+					h2 07
+				.text
+					p atuações conjuntas,
+			.boxFlex.up
+				.num
+					h2 08
+				.text
+					p planos integrados,
+			.boxFlex.up
+				.num
+					h2 09
+				.text
+					p acompanhamento,
+			.boxFlex.up
+				.num
+					h2 10
+				.text
+					p fluxos de comunicação e ação,
+			.boxFlex.up
+				.num
+					h2 11
+				.text
+					p monitoramento e avaliação.
+		
+		section.sec4
+			h2.up Algumas estratégias de atuação intersetorial podem ser destacadas (Silveira 2023):
+			.container-accordeon.up
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Oficinas sobre temas transversais 
+					.accordeon-texto
+						p Realização de oficinas que abordem temas como saúde coletiva, prevenção ao uso de drogas, direitos sexuais reprodutivos, juventude, direitos humanos, segurança alimentar e nutricional, acesso ao mundo do trabalho e inclusão digital, entre outros.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Mostras culturais e artísticas
+					.accordeon-texto
+						p Promoção de mostras que apresentem trabalhos artísticos e culturais produzidos pelos participantes do Serviço de Convivência e Fortalecimento de Vínculos, em parceria com grupos de saúde.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Trocas de produtos artesanais
+					.accordeon-texto
+						p Criação de grupos de troca de produtos artesanais de produtores locais, incentivando a economia solidária e o fortalecimento de vínculos comunitários.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Espaço para políticas sociais
+					.accordeon-texto
+						p Reservar espaço para a realização de atividades das demais políticas sociais, como cultura, esporte, lazer, saúde e trabalho, promovendo a participação da equipe no acompanhamento e divulgação dos direitos socioassistenciais.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Diagnósticos e rodas de conversa
+					.accordeon-texto
+						p Desenvolvimento de ações estratégicas, como diagnósticos e rodas de conversa sobre os problemas enfrentados pela comunidade e suas potencialidades.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Atividades culturais e comemorativas
+					.accordeon-texto
+						p Organização de atividades culturais e comemorativas que tenham significado para a comunidade, como festas juninas e carnaval.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Atividades integradas em direitos humanos
+					.accordeon-texto
+						p Desenvolvimento de atividades integradas, considerando a agenda de direitos humanos e enfrentamento a problemas como trabalho infantil, violência contra crianças e adolescentes, mulheres e idosos, além de questões relacionadas à consciência negra e campanhas como o Outubro Rosa.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Ações voltadas ao público escolar
+					.accordeon-texto
+						p Participação da equipe do CRAS para discutir ações desenvolvidas no território voltadas para o público escolar e pactuação de fluxos para o encaminhamento de crianças e adolescentes em situação de vulnerabilidade ou violação de direitos às unidades de assistência social.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Busca ativa escolar integrada
+					.accordeon-texto
+						p Implementação de uma busca ativa escolar integrada, promovendo o fortalecimento de vínculos e o acompanhamento de famílias que não estão cumprindo as condicionalidades do Programa Bolsa Família.
+		
+		section.sec5
+			.flex
+				.boxText.left
+					p A intersetorialidade será mais efetiva se os processos de planejamento e intervenção forem integrados e complementares, evitando sombreamentos e sobreposições de ações fragmentadas. A qualidade da intersetorialidade depende de processos colaborativos e participativos, o que compreende o protagonismo dos profissionais das respectivas políticas e dos sujeitos de direitos.
+				+image('img06.png', 'img right')
+		
+		section.sec6
+			.flex
+				+image('img07.png', 'img left')
+				.boxText.right
+					p A intersetorialidade se tornou um requisito para a implantação de políticas públicas e uma possibilidade institucional de integrar agendas coletivas e compartilhar objetivos comuns. Essa integração é fundamental para superar a fragmentação, o clientelismo e o “localismo” (Pereira e Teixeira, 2013) por meio da participação coletiva e de uma abordagem ética e política. A transversalidade, por sua vez, refere-se a temas oriundos de problemas complexos que não são integrados nas áreas convencionais, como saúde, educação e meio ambiente, e que precisam ser abordados em todas elas como “temas transversais”.
+
+		section.sec7
+			.flex.up
+				+aba([
+					{
+						nameAba: '01',
+						html: `
+						<p class="pTitle">Políticas setoriais</p>
+						<p>As políticas setoriais, isoladamente, não são suficientes para solucionar problemas complexos. Elas dependem de uma comunicação efetiva para identificar as necessidades da população e os benefícios que podem ou não oferecer. “Nesse sentido, a intersetorialidade na gestão pública significa adotar uma decisão racional no processo de gestão” (Sposati, 2006, p.134).</p>
+						`,
+						img: 'img08.png'
+					},
+					{
+						nameAba: '02',
+						html: `
+						<p class="pTitle">Trabalho em rede</p>
+						<p>O trabalho em rede pode prevenir a incidência de violações, reverter padrões violadores e educar em direitos humanos, promovendo valores ético-políticos como respeito e dignidade. Isso ajuda a ativar potencialidades socioemocionais e reconstruir projetos de vida, além de fomentar o desenvolvimento de subjetividades políticas que resultem em participação ativa.</p>
+						`,
+						img: 'img09.png'
+					},
+					{
+						nameAba: '03',
+						html: `
+						<p class="pTitle">Tipos de redes</p>
+						<p>Guará et al. (1998) classificam os tipos de redes que podem ser observadas no espaço local e nos territórios como: a rede social espontânea, redes sócio-comunitárias, rede social movimentalista, redes setoriais públicas e redes de serviços privados. No entanto, essa classificação se amplia com a inclusão de redes regionais e intersetoriais, que retratam de forma mais dinâmica as possibilidades de articulação às redes já existentes.</p>
+						`,
+						img: 'img10.png'
+					},
+					{
+						nameAba: '04',
+						html: `
+						<p class="pTitle">Análise crítica</p>
+						<p>A atuação em rede requer uma análise crítica dos fenômenos e problemas complexos, incluindo os pontos fortes e fracos, o alcance das ações e a potência das estratégias empreendidas. Alguns procedimentos são fundamentais nesse contexto, como mapear redes institucionais e comunitárias, formar e alimentar redes, e desenhar processos de gestão que organizem fluxos e momentos de interação, diálogo e proposição. É necessário também a adoção de mecanismos de decisão colegiada e participativa, com atuação para além da rede, especialmente na incidência e formulação de políticas públicas, levando em consideração a complexidade dos fenômenos.</p>
+						`,
+						img: 'img11.png'
+					},
+					{
+						nameAba: '05',
+						html: `
+						<p class="pTitle">Atenção!</p>
+						<p>As redes possuem uma dimensão social, técnica e política, e aspectos de gestão devem ser considerados na formação e alimentação dessas redes. Contudo, a concepção de políticas públicas e a gestão são fundamentais para garantir a efetividade dessas práticas. É importante evitar que as práticas reprodutivas perpetuem hierarquias na esfera do Estado ou reforcem uma mentalidade tecnocrática que controla as pessoas. Ao mesmo tempo, é possível adotar mecanismos que reforcem propostas participativas e deliberativas nas gestões territoriais.</p>
+						`,
+						img: 'img11.png'
+					},
+				])
+
+		section.sec8
+			h2.up A definição de estratégias para a atuação integrada das políticas de assistência social e educação nos territórios é fundamental para:
+			.container-accordeon.up
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Fortalecer o conhecimento da identidade do território de atuação
+					.accordeon-texto
+						p Promover um entendimento profundo das características, necessidades e potencialidades do território, permitindo uma resposta mais adequada às demandas da população.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Promover e refletir de maneira conjunta sobre as demandas sociais
+					.accordeon-texto
+						p Reunir as equipes para discutir e analisar as demandas sociais e a capacidade de respostas institucionais, garantindo que as ações sejam coesas e eficazes.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Planejar ações de intervenção de forma articulada
+					.accordeon-texto
+						p Desenvolver planos de ação que integrem diferentes setores e abordagens, promovendo uma atuação mais coordenada e efetiva.
+				.corpbtn.up
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Colaborar para a adesão e padronização de procedimentos
+					.accordeon-texto
+						p Trabalhar em conjunto para estabelecer procedimentos claros e padronizados junto às famílias.
+		
+		section.sec9.completeScorm
+			h2.up Conheça o Resultado Sistêmico 7 do Projeto Selo Unicef
+			p.up O Selo UNICEF, uma iniciativa do Fundo das Nações Unidas para a Infância, tem o objetivo de induzir a implementação de políticas permanentes, visando a redução das desigualdades e a garantia dos direitos das crianças e dos adolescentes. 
+			p.up A metodologia do Selo inclui Resultados Sistêmicos e Indicadores de Impacto Social relacionados aos direitos à saúde, educação, assistência social e participação social de crianças e adolescentes.
+			p.up Um Resultado Sistêmico expressa um resultado que permanece de forma sustentável no município, que promove equidade, que assegura o desenvolvimento humano, sendo baseado em evidências e implementado de modo participativo. Ele se concretiza por meio de ações, programas, planos, políticas, decretos, leis ou outra medida de caráter permanente aprovada e implementada formalmente e que tem continuidade para além da gestão vigente.
+			p.up O Resultado Sistêmico 7, “Proteção social e atenção integral para famílias vulneráveis via serviços intersetoriais”, permitirá aos municípios participantes do Selo, fortalecer capacidades institucionais para que a assistência social atue de modo mais intersetorial com a saúde e a educação, e amplie a integração entre a proteção social básica e a proteção social especial.
+			p.up.mtop <b>Acesse os conteúdos sobre Intersetorialidade e Vigilância Socioassistencial:</b>
+			p.up.mtop Curso 3 | Proteção Integral e Intersetorialidade via CRAS:
+			.flexButton.up
+				.boxIco
+					+image('ico01.png', 'ico')
+				a.button(href="https://youtube.com/playlist?list=PLg5IhsOl5bLUY2tNNsQsovwpyscUUYv6U&si=osXw9XngR2MGl54r", target="_blank", rel="noopener noreferrer")
+					p Acessar
+			p.up.mtop Curso 4 | Curso 4 | Vigilância Socioassistencial: função estratégica que amplia a proteção social:
+			.flexButton.up
+				.boxIco
+					+image('ico01.png', 'ico')
+				a.button(href="https://1drv.ms/f/s!AvsiULgQNkj9gpNwSkKBZXp340h91A", target="_blank", rel="noopener noreferrer")
+					p Acessar
+			p.up.mtop Acesse e conheça o Ambiente Virtual de Aprendizagem do Selo UNICEF:
+			.flexButton.up
+				.boxIco
+					+image('ico01.png', 'ico')
+				a.button(href="https://ava.unicef.org.br/login/index.php", target="_blank", rel="noopener noreferrer")
+					p Acessar
+
+		footer
+			+image('logo-footer.png', 'imgFooter up')
+
+block scripts
+	script(src="script.js")

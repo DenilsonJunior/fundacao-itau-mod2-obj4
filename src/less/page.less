@@ -1,0 +1,207 @@
+@import 'includes/imports.less';
+
+/* less components */
+@import 'includes/component/component.slider.less';
+@import 'includes/component/component.modal.less';
+// @import 'includes/component/component.acessibilidade.less';
+// @import 'includes/component/component.libras.less';
+@import 'includes/component/header.less';
+@import 'includes/component/attention.less';
+// @import 'includes/component/avatar.less';
+// @import 'includes/component/containerAvatar.less';
+// @import 'includes/component/equipamentos.less';
+// @import 'includes/component/conquistas.less';
+// @import 'includes/component/ballon.less';
+// @import 'includes/component/ballonQuiz.less';
+// @import 'includes/component/instrucoes.less';
+// @import 'includes/component/menuScreen.less';
+// @import 'includes/component/exercise.dragdrop.less';
+// @import 'includes/component/playerAudio.less';
+@import 'includes/exercise/exercise.pick-x.less';
+
+
+/* less template */
+@import 'includes/spacers.less';
+@import 'includes/colors.less';
+@import 'includes/fonts.less';
+@import 'includes/buttons.less';
+@import 'includes/defaults.less';
+
+html,
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mr-full {
+	top: 0 !important;
+	height: 100vh !important;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+	/*
+	 *  STYLE 9
+	 */
+	
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		background-color: #F5F5F5;
+	}
+
+	&::-webkit-scrollbar {
+		width: 15px;
+		background-color: #F5F5F5;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #F90;
+	}
+}
+
+*,
+h1, h2, h3, h4, h5,
+p, ul, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+* {
+	font-family: Helvetica Neue, Arial, RD Contrast, sans-serif;
+	font-weight: normal;
+}
+
+strong, b, .bold {
+	font-weight: bold;
+}
+
+.hide {
+	display: none !important;
+}
+
+h1 {
+	font-size: @font-06;
+}
+
+p {
+	font-size: @font-02;
+}
+
+body {
+	
+
+	// .btn-next {
+	// 	display: none;
+	// }
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		position: relative;
+
+	}
+}
+
+
+// Mixin de Aba
+
+.abasMixin {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	.boxInteraction {
+		position: relative;
+		width: 100%;
+
+		.flexButtons {
+			margin-bottom: -1rem;
+
+			.btn {
+				background-color: #FDC83E;
+				width: 6rem;
+				height: 4.5rem;
+				border-radius: .5rem .5rem 0 0;
+				padding-bottom: 1rem;
+
+				p {
+					font-weight: bold;
+					color: #053A57;
+				}
+
+				&.open {
+					background-color: #FFFFFF;
+				}
+			}
+		}
+
+		.boxMessage {
+			position: relative;
+			z-index: 1;
+			background-color: #053A57;
+			border-radius: .5rem;
+			padding: 2rem 1rem;
+			overflow: hidden;
+			min-height: 17rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.pTitle {
+				font-size: 1rem;
+				font-weight: 500;
+				color: #F5F5F5;
+			}
+			
+			p {
+				color: #F5F5F5;
+				font-size: .85rem;
+			}
+
+			p + p {
+				margin-top: 1rem;
+			}
+
+			ul,
+			ol {
+				padding-left: 1.5rem;
+				margin-top: 1rem;
+				li {
+					color: #F5F5F5;
+				}
+			}
+		}
+	}
+
+	.boxImg {
+		position: relative;
+		width: 18.2rem;
+
+		img {
+			width: 100%;
+		}
+	}
+}

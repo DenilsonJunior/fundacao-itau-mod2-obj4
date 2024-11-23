@@ -1,0 +1,18 @@
+mixin aba(tabs)
+    .abasMixin
+        .boxInteraction
+            .flexButtons
+                each tab, indice in tabs
+                    - abaIndice = "aba"+(indice);
+                    button.btn(aba!=indice, class!=abaIndice)
+                        p!=tab.nameAba
+            .boxMessage
+                each tab, indice in tabs
+                    - msgIndice = "msg"+(indice);
+                    .msg.up(class!=msgIndice)
+                        div!=tab.html
+        .boxImg
+            each tab, indice in tabs
+                - imgIndice = "img zoomIn img"+(indice);
+                if tab.img
+                    +image(tab.img, imgIndice)
